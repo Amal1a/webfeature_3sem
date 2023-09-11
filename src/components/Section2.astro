@@ -1,0 +1,98 @@
+---
+---
+
+ <!-- 5-Grid Container -->
+ <div class="container">
+
+  <!-- 2/5 Grid Section -->
+  <div class="two-fifth">
+    <img src="https://via.placeholder.com/750" alt="Placeholder Image" class="card-image">
+  </div>
+
+  <!-- 3/5 Grid Section -->
+  <div class="three-fifth">
+    <div class="center-text-block">
+      <h2>Three-fifth Section (3/5)</h2>
+      <p>This section takes up 3/5 of the container.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="container2">
+  
+  <div class="two-fifth2">
+    <img src="https://via.placeholder.com/250" alt="Placeholder Image" class="card-image">
+  </div>
+
+  <!-- 3/5 Grid Section -->
+  <div class="three-fifth">
+    <div class="center-text-block">
+      <h2>Three-fifth Section (3/5)</h2>
+      <p>This section takes up 3/5 of the container.</p>
+    </div>
+  </div>
+
+  <!-- 2/5 Grid Section -->
+  <div class="two-fifth">
+    <img src="https://via.placeholder.com/250" alt="Placeholder Image" class="card-image">
+  </div>
+
+</div>
+
+<style>
+       /* Container to hold 5-grid system */
+       .container {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .container2 {
+      display: grid;
+      grid-template-columns: 2fr 1fr 2fr;
+      gap: 10px;
+      width: 100%;
+    }
+
+    /* Create a 2/5 section */
+    .two-fifth {
+      background-color: lightgray;
+      border-radius: 20px 20px 0 20px; /* Rounded top-left, top-right, square bottom-right, rounded bottom-left */
+      border-right: 3px solid darkgray; /* Add right border only */
+      padding: 20px;
+      text-align: center;
+    }
+
+    .two-fifth2 {
+      background-color: lightgray;
+      border-radius: 20px 0 0 20px; /* Rounded top-left, top-right, square bottom-right, rounded bottom-left */
+      border-right: 3px solid darkgray; /* Add right border only */
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Style the image */
+    .card-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+
+    /* Create a 3/5 section */
+    .three-fifth {
+      background-color: lightblue;
+      padding: 20px;
+      text-align: center;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+    }
+
+    /* Center text block vertically and horizontally */
+    .center-text-block {
+      display: inline-block;
+      text-align: left;
+    }
+</style>
