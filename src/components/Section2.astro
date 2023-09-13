@@ -5,11 +5,11 @@
 <div class="container">
   <!-- 2/5 Grid Section -->
   <div class="two-fifth">
-    <img
-      src="https://via.placeholder.com/750"
+    <!-- <img
+      src="../asset/images/ilford-sort-hvid-film.jpg"
       alt="Placeholder Image"
       class="card-image"
-    />
+    /> -->
   </div>
 
   <!-- 3/5 Grid Section -->
@@ -38,10 +38,10 @@
 
   <!-- 3/5 Grid Section -->
   <div class="textbox2">
-    <div class="center-text-block">
+    <!-- <div class="center-text-block">
       <h2>Three-fifth Section (3/5)</h2>
       <p>Dette er mellemboks i række 2 med baggrund</p>
-    </div>
+    </div> -->
   </div>
 
   <!-- 2/5 Grid Section -->
@@ -93,21 +93,26 @@
   }
 
   .textbox1 {
-    background-color: lightblue;
-    padding: 20px;
     text-align: center;
     display: grid;
     align-items: center;
     justify-items: center;
-    border: 3px solid darkgray;
+    border: 1px solid #575757;
+    color: beige;
+    padding: 5rem;
+    line-height: 100%;
+    font-size: 3vw;
   }
   .textbox2 {
-    background-color: lightblue;
     padding: 20px;
-    text-align: center;
+    /* text-align: center; */
     display: grid;
     align-items: center;
     justify-items: right;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #575757;
+    border-right: 1px solid #575757;
   }
 
   .center-text-block {
@@ -123,10 +128,13 @@
   }
 
   .two-fifth {
-    background-color: lightgray;
     border-radius: 40px 40px 0 40px; /* Rounded top-left, top-right, square bottom-right, rounded bottom-left */
-    padding: 20px;
     text-align: center;
+    background-image: url("../asset/images/ilford-sort-hvid-film.jpg");
+    aspect-ratio: 15/9;
+    /* aspect ratio skal ændres for at billedet passer korrekt. */
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
 
   /* Container to hold 5-grid system. This is Second row*/
@@ -134,6 +142,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     width: 100%;
+    color: beige;
   }
 
   .two-fifth2 {
@@ -155,13 +164,7 @@
     display: grid;
     grid-template-columns: 3fr 2fr;
     width: 100%;
-  }
-
-  .textbox2 {
-    border-top: none;
-    border-bottom: none;
-    border-left: 3px solid darkgray;
-    border-right: 3px solid darkgray;
+    color: beige;
   }
 
   .two-fifth4 {
