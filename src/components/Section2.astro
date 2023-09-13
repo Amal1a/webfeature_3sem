@@ -16,7 +16,13 @@
   <div class="textbox1">
     <div class="center-text-block">
       <h2>Three-fifth Section (3/5)</h2>
-      <p>This section takes up 3/5 of the container.</p>
+      <p>
+        Pierres interesse for foto startede som ganske ung - som 10-årig fik han
+        sin fars gamle Rollei-kamera, og begyndte at skyde løs. Det var før den
+        digitale revolution, så alle Pierres lommepenge blev brugt på filmruller
+        og fremkaldelse af film. Pierre fortsatte med at fotografere på film op
+        gennem gymnasietiden.
+      </p>
     </div>
   </div>
 </div>
@@ -34,7 +40,7 @@
   <div class="textbox2">
     <div class="center-text-block">
       <h2>Three-fifth Section (3/5)</h2>
-      <p>This section takes up 3/5 of the container.</p>
+      <p>Dette er mellemboks i række 2 med baggrund</p>
     </div>
   </div>
 
@@ -52,7 +58,19 @@
   <div class="textbox1">
     <div class="center-text-block">
       <h2>Three-fifth Section (3/5)</h2>
-      <p>This section takes up 3/5 of the container.</p>
+      <p>
+        Pierre over til digital fotografering i starten af 2000’erne, da han
+        begyndte at studere fotografisk kommunikation på DMJX. Her åbnede en ny
+        verden sig: Reklamefotografering i studie, lyssætning og manipulering af
+        billeder i Photoshop blev hans nye stil.
+      </p>
+      <p>
+        På det tidspunkt var stock-foto industrien i starten af en revolution:
+        De første online stock-foto websites begyndte at komme på markedet, men
+        de store, etablerede spillere på markedet holdt lidt igen. Pierre så det
+        for sig: “Om ganske få år er hele branchen digital, og dem der ikke
+        hopper med på den digitale vogn, lukker.”
+      </p>
     </div>
   </div>
 
@@ -66,16 +84,15 @@
 </div>
 
 <style>
-
   /* General CSS for all*/
+
   .card-image {
     max-width: 100%;
     height: auto;
     border-radius: 15px;
   }
 
-  .textbox1,
-  .textbox2 {
+  .textbox1 {
     background-color: lightblue;
     padding: 20px;
     text-align: center;
@@ -84,19 +101,24 @@
     justify-items: center;
     border: 3px solid darkgray;
   }
+  .textbox2 {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-items: right;
+  }
 
   .center-text-block {
     display: inline-block;
     text-align: left;
   }
 
-
-
   /* Container to hold 5-grid system. This is first row*/
   .container {
     display: grid;
     grid-template-columns: 2fr 3fr;
-    gap: 10px;
     width: 100%;
   }
 
@@ -111,7 +133,6 @@
   .container2 {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
-    gap: 10px;
     width: 100%;
   }
 
@@ -122,10 +143,6 @@
     text-align: center;
   }
 
-  .textbox2 {
-    border: none;
-  }
-
   .two-fifth3 {
     background-color: lightgray;
     border-radius: 0 40px 80px 0; /* Rounded top-left, top-right, square bottom-right, rounded bottom-left */
@@ -133,18 +150,16 @@
     text-align: center;
   }
 
-
   /* Container to hold 5-grid system. This is Third row*/
   .container3 {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    gap: 10px;
     width: 100%;
   }
 
   .textbox2 {
     border-top: none;
-    border-bottom: 3px solid darkgray;
+    border-bottom: none;
     border-left: 3px solid darkgray;
     border-right: 3px solid darkgray;
   }
@@ -155,5 +170,4 @@
     padding: 20px;
     text-align: center;
   }
-
 </style>
