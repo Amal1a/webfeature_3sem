@@ -17,12 +17,17 @@
   <div class="textbox1">
     <div class="center-text-block">
       <p>
-        Pierres interesse for foto startede som ganske ung - som 10-årig fik han
-        sin fars gamle Rollei-kamera, og begyndte at skyde løs. Det var før den
-        digitale revolution, så alle Pierres lommepenge blev brugt på filmruller
-        og fremkaldelse af film. Pierre fortsatte med at fotografere på film op
-        gennem gymnasietiden.
+        Men Pierre er glad for sin beslutning. Indkomsten er lavere nu, men han
+        har stadig lidt penge på kontoen, og studerer nu kunstfotografering på
+        fotoskolen Fatamorgana. Han glæder sig over hver dags kunstneriske
+        eksperimenter, og er for første gang i sit liv rigtig stolt af sit
+        arbejde.
       </p>
+      <q>
+        Det interessante ligger i fejlen. Et foto med masser af fejl er
+        interessant. Jeg eksperimenterer med udstyr og teknik, og skaber nye
+        visuelle udtryk.</q
+      >
     </div>
   </div>
 </div>
@@ -57,18 +62,14 @@
 <div class="container3">
   <div class="textbox3">
     <div class="center-text-block">
+      <h3>UPERFEKT ER PERFEKT</h3>
       <p>
-        Pierre over til digital fotografering i starten af 2000’erne, da han
-        begyndte at studere fotografisk kommunikation på DMJX. Her åbnede en ny
-        verden sig: Reklamefotografering i studie, lyssætning og manipulering af
-        billeder i Photoshop blev hans nye stil.
-      </p>
-      <p>
-        På det tidspunkt var stock-foto industrien i starten af en revolution:
-        De første online stock-foto websites begyndte at komme på markedet, men
-        de store, etablerede spillere på markedet holdt lidt igen. Pierre så det
-        for sig: “Om ganske få år er hele branchen digital, og dem der ikke
-        hopper med på den digitale vogn, lukker.”
+        Karrieren begynder også så småt også at gå den rette vej: Pierre er
+        begyndt at sælge fotokunst på nettet, og har udgivet sin første foto-bog
+        med titlen “Lidt i fem,” som er en fotografisk odyssé om at slæbe en
+        brandert hjem i de tidlige morgentimer. I forbindelse med udgivelsen af
+        bogen, har han en udstilling på vej i det Kongelige Biblioteks
+        fotoudstilling.
       </p>
     </div>
   </div>
@@ -81,7 +82,13 @@
       /> -->
   </div>
 </div>
-
+<div class="quotes">
+  <q
+    >Nu kan jeg leve livet igen. Jeg føler mig frisk. Jeg føler mig fri. Jeg
+    føler mig genfødt.</q
+  >
+  <q>Uperfekt er perfekt</q>
+</div>
 <style>
   /* General CSS for all*/
 
@@ -93,7 +100,6 @@
 
   h1 {
     transform: rotate(-10deg);
-    margin-bottom: 10rem;
   }
   .textbox1 {
     text-align: center;
@@ -153,10 +159,20 @@
     aspect-ratio: 9/10;
     background-size: cover;
     background-position: top;
-    /* aspect ratio skal ændres for at billedet passer korrekt. */
     background-repeat: no-repeat;
   }
-
+  /* Animation */
+  /* animation: var(--animation-fade-in), var(--animation-slide-in-right);
+    opacity: 1;
+  }
+  @keyframes two-fifth {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  } */
   /* Container to hold 5-grid system. This is Second row*/
   .container2 {
     display: grid;
@@ -196,6 +212,7 @@
     width: 100%;
     color: beige;
     border-bottom: 1px solid #575757;
+    margin-top: 4rem;
   }
 
   .two-fifth4 {
@@ -207,5 +224,20 @@
     border-radius: 0 20px 20px 70px; /* Rounded top-left, top-right, square bottom-right, rounded bottom-left */
     padding: 20px;
     text-align: center;
+  }
+
+  .quotes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrer lodret */
+    align-items: center; /* Centrer vandret */
+    gap: 10rem;
+    margin: 10rem;
+  }
+
+  .quotes q {
+    max-width: 65vw;
+    color: var(--cyan-3);
+    font-size: var(--size-10);
   }
 </style>
