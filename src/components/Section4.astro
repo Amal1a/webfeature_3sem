@@ -1,0 +1,204 @@
+---
+---
+
+<!-- 5-Grid Container -->
+<div class="container">
+  <!-- 2/5 Grid Section -->
+  <div class="two-fifth">
+    <!-- <img
+        src="../asset/images/ilford-sort-hvid-film.jpg"
+        alt="Placeholder Image"
+        class="card-image"
+      /> -->
+  </div>
+
+  <!-- 3/5 Grid Section -->
+  <div class="textbox1">
+    <div class="center-text-block">
+      <p>
+        Pierres interesse for foto startede som ganske ung - som 10-årig fik han
+        sin fars gamle Rollei-kamera, og begyndte at skyde løs. Det var før den
+        digitale revolution, så alle Pierres lommepenge blev brugt på filmruller
+        og fremkaldelse af film. Pierre fortsatte med at fotografere på film op
+        gennem gymnasietiden.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container2">
+  <div class="two-fifth2">
+    <!-- <img
+        src="https://via.placeholder.com/250"
+        alt="Placeholder Image"
+        class="card-image"
+      /> -->
+  </div>
+
+  <!-- 3/5 Grid Section -->
+  <div class="textbox2">
+    <!-- <div class="center-text-block">
+        <h2>Three-fifth Section (3/5)</h2>
+        <p>Dette er mellemboks i række 2 med baggrund</p>
+      </div> -->
+  </div>
+
+  <!-- 2/5 Grid Section -->
+  <div class="two-fifth3">
+    <!-- <img
+        src="https://via.placeholder.com/250"
+        alt="Placeholder Image"
+        class="card-image"
+      /> -->
+  </div>
+</div>
+
+<div class="container3">
+  <div class="textbox3">
+    <div class="center-text-block">
+      <p>
+        Pierre over til digital fotografering i starten af 2000’erne, da han
+        begyndte at studere fotografisk kommunikation på DMJX. Her åbnede en ny
+        verden sig: Reklamefotografering i studie, lyssætning og manipulering af
+        billeder i Photoshop blev hans nye stil.
+      </p>
+      <p>
+        På det tidspunkt var stock-foto industrien i starten af en revolution:
+        De første online stock-foto websites begyndte at komme på markedet, men
+        de store, etablerede spillere på markedet holdt lidt igen. Pierre så det
+        for sig: “Om ganske få år er hele branchen digital, og dem der ikke
+        hopper med på den digitale vogn, lukker.”
+      </p>
+    </div>
+  </div>
+
+  <div class="two-fifth4">
+    <!-- <img
+        src="https://via.placeholder.com/250"
+        alt="Placeholder Image"
+        class="card-image"
+      /> -->
+  </div>
+</div>
+
+<style>
+  /* General CSS for all*/
+
+  .card-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  .textbox1 {
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-left: 1px solid #575757;
+
+    color: beige;
+    padding: 5rem;
+    line-height: 100%;
+    font-size: 3vw;
+  }
+  .textbox2 {
+    padding: 20px;
+    /* text-align: center; */
+    display: grid;
+    align-items: center;
+    justify-items: right;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #575757;
+    border-right: 1px solid #575757;
+  }
+
+  .textbox3 {
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-right: 1px solid #575757;
+    color: beige;
+    padding: 5rem;
+    line-height: 100%;
+    font-size: 3vw;
+  }
+
+  .center-text-block {
+    display: inline-block;
+    text-align: left;
+  }
+
+  /* Container to hold 5-grid system. This is first row*/
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    width: 100%;
+    border-top: 1px solid #575757;
+    border-bottom: 1px solid #575757;
+  }
+
+  .two-fifth {
+    border-radius: 40px 40px 0 40px; /* Rounded top-left, top-right, square bottom-right, rounded bottom-left */
+    text-align: center;
+    background-image: url("../asset/images/ilford-sort-hvid-film.jpg");
+    aspect-ratio: 15/9;
+    background-position: top;
+    /* aspect ratio skal ændres for at billedet passer korrekt. */
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  /* Container to hold 5-grid system. This is Second row*/
+  .container2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    width: 100%;
+    color: beige;
+    border-bottom: 1px solid #575757;
+  }
+
+  .two-fifth2 {
+    background-image: url("../asset/images/ilford-sort-hvid-film.jpg");
+    aspect-ratio: 20/9;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    border-radius: 40px 0 0 40px; /* Rounded top-left, top-right, square bottom-right, rounded bottom-left */
+    padding: 20px;
+    text-align: center;
+  }
+
+  .two-fifth3 {
+    background-image: url("../asset/images/filmfoto.jpeg");
+    opacity: 40%;
+    aspect-ratio: 20/9;
+    background-position: center;
+    background-size: 130%;
+    border-radius: 0 40px 80px 0; /* Rounded top-left, top-right, square bottom-right, rounded bottom-left */
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Container to hold 5-grid system. This is Third row*/
+  .container3 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    width: 100%;
+    color: beige;
+    border-bottom: 1px solid #575757;
+  }
+
+  .two-fifth4 {
+    background-image: url("../asset/images/sh-skidt.jpg");
+    opacity: 50%;
+    aspect-ratio: 10/9;
+    background-size: 100%;
+    background-position: 50%;
+    border-radius: 0 20px 20px 70px; /* Rounded top-left, top-right, square bottom-right, rounded bottom-left */
+    padding: 20px;
+    text-align: center;
+  }
+</style>
