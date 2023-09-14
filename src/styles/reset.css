@@ -1,55 +1,47 @@
-
 *,
 *::before,
 *::after {
-    box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
- 
 * {
-    margin: 0;
+  margin: 0;
 }
 
- 
 html {
-    -webkit-text-size-adjust: none;
-    -webkit-font-smoothing: antialiased;
-    block-size: 100%;
-    color: var(--gray-7);
-    font-family: var(--font-sans);
-    line-height: var(--font-lineheight-3);
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  block-size: 100%;
+  color: var(--gray-7);
+  font-family: var(--font-sans);
+  line-height: var(--font-lineheight-3);
 }
 
- 
 body {
-    min-block-size: 100%;
+  min-block-size: 100%;
 }
 
- 
 img,
 picture,
 video,
 svg {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
- 
 input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
- 
 ul:where([role="list"]),
 ol:where([role="list"]) {
-    list-style: none;   
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
- 
 p,
 h1,
 h2,
@@ -57,14 +49,14 @@ h3,
 h4,
 h5,
 h6 {
-    overflow-wrap: break-word;
-    font-size: initial;
+  overflow-wrap: break-word;
+  font-size: initial;
 }
 
- 
 h1,
 h2,
 h3 {
-    color: var(--gray-9);
-    line-height: var(--font-lineheight-0);
+  color: var(--gray-9);
+  line-height: var(--font-lineheight-0);
+  font-size: var(--size-10);
 }
