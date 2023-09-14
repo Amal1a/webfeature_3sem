@@ -15,7 +15,6 @@
   <!-- 3/5 Grid Section -->
   <div class="textbox1">
     <div class="center-text-block">
-      <h2>Three-fifth Section (3/5)</h2>
       <p>
         Pierres interesse for foto startede som ganske ung - som 10-årig fik han
         sin fars gamle Rollei-kamera, og begyndte at skyde løs. Det var før den
@@ -29,11 +28,11 @@
 
 <div class="container2">
   <div class="two-fifth2">
-    <img
+    <!-- <img
       src="https://via.placeholder.com/250"
       alt="Placeholder Image"
       class="card-image"
-    />
+    /> -->
   </div>
 
   <!-- 3/5 Grid Section -->
@@ -46,18 +45,17 @@
 
   <!-- 2/5 Grid Section -->
   <div class="two-fifth3">
-    <img
+    <!-- <img
       src="https://via.placeholder.com/250"
       alt="Placeholder Image"
       class="card-image"
-    />
+    /> -->
   </div>
 </div>
 
 <div class="container3">
   <div class="textbox1">
     <div class="center-text-block">
-      <h2>Three-fifth Section (3/5)</h2>
       <p>
         Pierre over til digital fotografering i starten af 2000’erne, da han
         begyndte at studere fotografisk kommunikation på DMJX. Her åbnede en ny
@@ -75,11 +73,11 @@
   </div>
 
   <div class="two-fifth4">
-    <img
+    <!-- <img
       src="https://via.placeholder.com/250"
       alt="Placeholder Image"
       class="card-image"
-    />
+    /> -->
   </div>
 </div>
 
@@ -132,6 +130,7 @@
     text-align: center;
     background-image: url("../asset/images/ilford-sort-hvid-film.jpg");
     aspect-ratio: 15/9;
+    background-position: top;
     /* aspect ratio skal ændres for at billedet passer korrekt. */
     background-size: 100%;
     background-repeat: no-repeat;
@@ -146,14 +145,21 @@
   }
 
   .two-fifth2 {
-    background-color: lightgray;
+    background-image: url("../asset/images/ilford-sort-hvid-film.jpg");
+    aspect-ratio: 20/9;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 90%;
     border-radius: 40px 0 0 40px; /* Rounded top-left, top-right, square bottom-right, rounded bottom-left */
     padding: 20px;
     text-align: center;
   }
 
   .two-fifth3 {
-    background-color: lightgray;
+    background-image: url("../asset/images/filmfoto.jpeg");
+    aspect-ratio: 20/9;
+    background-position: center;
+    background-size: 130%;
     border-radius: 0 40px 80px 0; /* Rounded top-left, top-right, square bottom-right, rounded bottom-left */
     padding: 20px;
     text-align: center;
@@ -168,7 +174,10 @@
   }
 
   .two-fifth4 {
-    background-color: lightgray;
+    background-image: url("../asset/images/sh-skidt.jpg");
+    aspect-ratio: 10/9;
+    background-size: 100%;
+    background-position: 50%;
     border-radius: 0 20px 20px 70px; /* Rounded top-left, top-right, square bottom-right, rounded bottom-left */
     padding: 20px;
     text-align: center;
