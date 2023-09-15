@@ -5,13 +5,19 @@ import Section3 from "../components/Section3.astro";
 import Section4 from "../components/Section4.astro";
 
 import "../styles/reset.css";
-const { title } = Astro.props;
+/* const { title } = Astro.props; */
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
@@ -29,5 +35,25 @@ const { title } = Astro.props;
 <style>
   main {
     background-color: #363434;
+  }
+
+  .pierre {
+    animation: var(--animation-slide-in-up) forward;
+  }
+
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+
+      opacity: 0;
+    }
+
+    40% {
+      opacity: 0.6;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
 </style>

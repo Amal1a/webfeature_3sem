@@ -2,7 +2,7 @@
 ---
 
 <section class="bgi-web">
-  <h1>Pierre Falcke</h1>
+  <h2>Pierre Falcke</h2>
 </section>
 <div class="fotoPierre"></div>
 <div class="text">
@@ -33,7 +33,7 @@
     justify-self: center;
     /* font-family: special-elite; */
   }
-  h1 {
+  h2 {
     color: #1e1e1e;
     font-size: 10vw;
     transform: rotate(-5deg);
@@ -72,7 +72,7 @@
   }
 
   @media screen and (min-width: 800px) {
-    h1 {
+    h2 {
       grid-area: 1/1;
       align-self: center;
       justify-self: center;
@@ -107,22 +107,42 @@
   }
 </style>
 <script>
-  // import { gsap } from "gsap";
-  // import { ScrollTrigger } from "gsap/ScrollTrigger";
-  // gsap.registerPlugin(ScrollTrigger);
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+  gsap.registerPlugin(ScrollTrigger);
 
-  // gsap.from(".text", {
-  //   x: 500,
-  //   scale: 2,
-  //   opacity: 0.5,
-  //   ease: "elastic.out(1,0.3)",
-  //   duration: 2,
-  //   scrollTrigger: {
-  //     trigger: ".ball-2",
-  //     start: "start 50%",
-  //     end: "bottom 20%",
-  //     toggleActions: "play none none reverse",
-  //     // markers: true,
-  //   },
-  // });
+  gsap.from("p", {
+    opacity: 0,
+
+    scrollTrigger: {
+      trigger: "p",
+
+      /* markers: true, */
+
+      start: "start 80%",
+
+      toggleActions: "play none none reverse",
+
+      toggleClass: "pierre",
+    },
+  });
+
+  gsap.from("h1", {
+    y: 500,
+  });
+
+  /*  gsap.from(".text", {
+    x: 500,
+    scale: 2,
+    opacity: 0.5,
+    ease: "elastic.out(1,0.3)",
+    duration: 2,
+    scrollTrigger: {
+      trigger: ".ball-2",
+      start: "start 50%",
+      end: "bottom 20%",
+      toggleActions: "play none none reverse",
+      // markers: true,
+    },
+  }); */
 </script>

@@ -1,3 +1,5 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Special+Elite&display=swap"); */
+
 *,
 *::before,
 *::after {
@@ -12,13 +14,18 @@ html {
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
   block-size: 100%;
-  color: var(--gray-7);
+  /* color: var(--gray-7);
   font-family: var(--font-sans);
-  line-height: var(--font-lineheight-3);
+  line-height: var(--font-lineheight-3); */
 }
 
 body {
   min-block-size: 100%;
+}
+
+::selection {
+  background-color: var(--cyan-3) !important;
+  color: #363434 !important;
 }
 
 img,
@@ -42,21 +49,34 @@ ol:where([role="list"]) {
   padding: 0;
 }
 
-p,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  font-family: "Special Elite", cursive;
   overflow-wrap: break-word;
   font-size: initial;
 }
 
 h1,
-h2,
 h3 {
-  color: var(--gray-9);
+  color: var(--gray-1);
   line-height: var(--font-lineheight-0);
   font-size: var(--size-10);
+}
+
+h2 {
+  font-size: var(--size-10);
+  color: var(--stone-12);
+}
+
+p {
+  font-family: "Dosis", sans-serif;
+  font-size: var(--size-5);
+}
+
+.quotes {
+  font-family: "Special Elite", cursive;
 }
