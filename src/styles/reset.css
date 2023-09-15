@@ -56,7 +56,7 @@ h4,
 h5,
 h6 {
   font-family: "Special Elite", cursive;
-  overflow-wrap: break-word;
+  /*  overflow-wrap: break-word; */
   font-size: initial;
 }
 
@@ -79,4 +79,10 @@ p {
 
 .quotes {
   font-family: "Special Elite", cursive;
+}
+
+@media screen and (max-width: 800px) {
+  p {
+    line-height: var(--size-6);
+  }
 }
