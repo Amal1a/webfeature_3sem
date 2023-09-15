@@ -48,7 +48,7 @@
       />
     </div>
 
-    <p class="p-1">
+    <p class="p-1 p_4">
       Pierre tjente godt det følgende årti. Men stille og roligt begyndte
       billederne også at give ham kvalme. Han kunne ikke holde sit eget arbejde
       ud, og måtte finde et modsvar til alle de blankpolerede fotos. Noget han
@@ -85,13 +85,13 @@
     <img class="pic-5" src="src/asset/images/gammel-film.jpg" alt="aften måne foto">
     </div> -->
     </div>
-    <p class="p-2">
+    <p class="p-2 p_5">
       Han søgte inspiration i analog fotografering, i Lomo-bevægelsen, Glitch
       art og polaroid fotografering, og begyndte stille og roligt at skabe sig
       en ny stil - en stil med fokus på det uperfekte, og hvor der er et
       uforudsigeligt element i det at tage billeder.
     </p>
-    <p class="p-3">
+    <p class="p-3 p_6">
       Pierre tog det endda så vidt at han ikke kun droppede at tage stock-fotos.
       Han fjernede også alle stock-fotos fra de tjenester, han solgte sine fotos
       hos. Han gik fra at være en god forretningsdriv- ende til at blive en
@@ -161,177 +161,209 @@
       d="m0,0h915c-20.33,18.67-40.67,37.33-61,56-52.67-9.67-105.33-19.33-158-29-27.67,23-55.33,46-83,69-43.67,51.67-87.33,103.33-131,155-30.67,12.33-61.33,24.67-92,37-41.33,26-82.67,52-124,78l-57,96c-46,35.67-92,71.33-138,107-23.67,9.67-47.33,19.33-71,29"
       filter="url(#drop-shadow)"></path>
   </svg>
+</section>
 
-  <style>
-    h2 {
-      width: 95.1875rem;
-      margin-top: 6rem;
-      margin-left: 3rem;
-      transform: rotate(-9.006deg);
+<style>
+  h2 {
+    width: 95.1875rem;
+    margin-top: 6rem;
+    margin-left: 3rem;
+    transform: rotate(-9.006deg);
+  }
+
+  p {
+    max-width: 75.4375rem;
+    height: 10.5rem;
+    transform: rotate(-4.5deg);
+    flex-shrink: 0;
+  }
+  .skillevej-sec {
+    display: flex;
+    flex-direction: column;
+    background-color: #8a9bb1;
+    background-size: fill;
+  }
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+  .images-1 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 50rem;
+    margin-bottom: 22rem;
+    padding-top: 13.125rem;
+  }
+
+  .p-1,
+  .p-2,
+  .p-3 {
+    margin: auto;
+    max-width: 1207px;
+    padding: 10px;
+  }
+
+  .images-1 p {
+    z-index: 1;
+    color: aliceblue;
+    transform: rotate(-9.23deg);
+  }
+
+  .images-2 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 60.5305rem;
+    margin-bottom: 7rem;
+  }
+
+  .images-3 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #Layer_fstock {
+    /*   z-index: -1; */
+    transform: rotate(-8.34deg);
+  }
+
+  #Layer_glitch {
+    transform: rotate(-24.6deg);
+  }
+
+  .pic-1 {
+    width: 30.4375rem;
+    height: 47.6875rem;
+    transform: rotate(-5.021deg);
+    border: 15px solid #f6f0eb;
+    box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .pic-2 {
+    width: 31.8125rem;
+    height: 38.8125rem;
+    transform: rotate(10.216deg);
+    border: 15px solid #f6f0eb;
+    box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .pic-3 {
+    width: 37.875rem;
+    height: 46.1875rem;
+    transform: rotate(-7.561deg);
+    border: 12px solid #f6f0eb;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+    margin: 4.56px 54.2px 30.2px 0px;
+  }
+
+  .pic-4 {
+    width: 46.6875rem;
+    height: 60.8125rem;
+    transform: rotate(4.842deg);
+    border: 15px solid #f6f0eb;
+    box-shadow: 0px 10px 15px -2px rgba(0, 0, 0, 0.25);
+    margin: 0px 13.5px 21px 32.7px;
+  }
+
+  .pic-5 {
+    width: 25.625rem;
+    height: 31.3125rem;
+    transform: rotate(14.218deg);
+    border: 15px solid #fff;
+    box-shadow: 0px 10px 15px -2px rgba(0, 0, 0, 0.25);
+    margin: 48.9px 0px 0px 65.3px;
+  }
+
+  .pic-6 {
+    width: 33.5625rem;
+    height: 40.9375rem;
+    transform: rotate(-7.561deg);
+    border: 15px solid #f6f0eb;
+    box-shadow: 0px 10px 15px -2px rgba(0, 0, 0, 0.25);
+  }
+
+  .pic-7 {
+    width: 44.0625rem;
+    height: 49.0625rem;
+    transform: rotate(4.842deg);
+    border: 15px solid #f6f0eb;
+    box-shadow: -6px 2px 20px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  .pierre {
+    animation: var(--animation-slide-in-up) forward;
+  }
+
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+
+      opacity: 0;
     }
 
-    p {
-      max-width: 75.4375rem;
-      height: 10.5rem;
-      transform: rotate(-4.5deg);
-      flex-shrink: 0;
+    40% {
+      opacity: 0.6;
     }
-    .skillevej-sec {
-      display: flex;
-      flex-direction: column;
-      background-color: #8a9bb1;
-      background-size: fill;
+
+    100% {
+      opacity: 1;
     }
-    svg {
-      width: 100%;
-      height: 100%;
-    }
+  }
+
+  @media screen and (max-width: 800px) {
     .images-1 {
       display: flex;
       align-items: flex-start;
       flex-wrap: wrap;
       justify-content: center;
       height: 50rem;
-      margin-bottom: 22rem;
+      margin-bottom: -11rem;
       padding-top: 13.125rem;
     }
 
-    .p-1,
-    .p-2,
-    .p-3 {
-      margin: auto;
-      max-width: 1207px;
-      padding: 10px;
-    }
-
-    .images-1 p {
-      z-index: 1;
-      color: aliceblue;
-      transform: rotate(-9.23deg);
-    }
-
-    .images-2 {
+    .images-2:where(.astro-3FHHKPMP) {
       display: flex;
       align-items: flex-start;
       flex-wrap: wrap;
       justify-content: center;
-      height: 60.5305rem;
-    }
-
-    .images-3 {
-      display: flex;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    #Layer_fstock {
-      /*   z-index: -1; */
-      transform: rotate(-8.34deg);
-    }
-
-    #Layer_glitch {
-      transform: rotate(-24.6deg);
+      height: 27.5305rem;
+      margin-bottom: 1rem;
     }
 
     .pic-1 {
-      width: 30.4375rem;
-      height: 47.6875rem;
-      transform: rotate(-5.021deg);
-      border: 15px solid #f6f0eb;
-      box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.25);
+      height: 21.999rem;
+      width: 14.03rem;
     }
-
     .pic-2 {
-      width: 31.8125rem;
-      height: 38.8125rem;
-      transform: rotate(10.216deg);
-      border: 15px solid #f6f0eb;
-      box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.25);
+      height: 17.942rem;
+      width: 14.699rem;
     }
-
     .pic-3 {
-      width: 37.875rem;
-      height: 46.1875rem;
-      transform: rotate(-7.561deg);
-      border: 12px solid #f6f0eb;
-      box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
-      margin: 4.56px 54.2px 30.2px 0px;
+      height: 17.942rem;
+      width: 14.699rem;
+      margin: 0;
     }
-
     .pic-4 {
-      width: 46.6875rem;
-      height: 60.8125rem;
-      transform: rotate(4.842deg);
-      border: 15px solid #f6f0eb;
-      box-shadow: 0px 10px 15px -2px rgba(0, 0, 0, 0.25);
-      margin: 0px 13.5px 21px 32.7px;
+      height: 23.612rem;
+      width: 18.124rem;
+      margin: 0;
     }
-
     .pic-5 {
-      width: 25.625rem;
-      height: 31.3125rem;
-      transform: rotate(14.218deg);
-      border: 15px solid #fff;
-      box-shadow: 0px 10px 15px -2px rgba(0, 0, 0, 0.25);
-      margin: 48.9px 0px 0px 65.3px;
+      height: 14.227rem;
+      width: 12.637rem;
     }
-
     .pic-6 {
-      width: 33.5625rem;
-      height: 40.9375rem;
-      transform: rotate(-7.561deg);
-      border: 15px solid #f6f0eb;
-      box-shadow: 0px 10px 15px -2px rgba(0, 0, 0, 0.25);
+      height: 14.224rem;
+      width: 11.653rem;
     }
-
     .pic-7 {
-      width: 44.0625rem;
-      height: 49.0625rem;
-      transform: rotate(4.842deg);
-      border: 15px solid #f6f0eb;
-      box-shadow: -6px 2px 20px 2px rgba(0, 0, 0, 0.25);
+      height: 17.043rem;
+      width: 15.303rem;
     }
-
-    @media screen and (max-width: 800px) {
-      .images-2:where(.astro-3FHHKPMP) {
-        display: flex;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        justify-content: center;
-        height: 27.5305rem;
-      }
-
-      .pic-1 {
-        height: 21.999rem;
-        width: 14.03rem;
-      }
-      .pic-2 {
-        height: 17.942rem;
-        width: 14.699rem;
-      }
-      .pic-3 {
-        height: 17.942rem;
-        width: 14.699rem;
-        margin: 0;
-      }
-      .pic-4 {
-        height: 23.612rem;
-        width: 18.124rem;
-        margin: 0;
-      }
-      .pic-5 {
-        height: 14.227rem;
-        width: 12.637rem;
-      }
-      .pic-6 {
-        height: 14.224rem;
-        width: 11.653rem;
-      }
-      .pic-7 {
-        height: 17.043rem;
-        width: 15.303rem;
-      }
-    }
-  </style>
-</section>
+  }
+</style>

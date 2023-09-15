@@ -1,7 +1,7 @@
 ---
 ---
 
-<h1>En ny begyndelse</h1>
+<h1 class="ny-b">En ny begyndelse</h1>
 <!-- 5-Grid Container -->
 <div class="container">
   <!-- 2/5 Grid Section -->
@@ -16,14 +16,14 @@
   <!-- 3/5 Grid Section -->
   <div class="textbox1">
     <div class="center-text-block">
-      <p>
+      <p class="p_7">
         Men Pierre er glad for sin beslutning. Indkomsten er lavere nu, men han
         har stadig lidt penge på kontoen, og studerer nu kunstfotografering på
         fotoskolen Fatamorgana. Han glæder sig over hver dags kunstneriske
         eksperimenter, og er for første gang i sit liv rigtig stolt af sit
         arbejde.
       </p>
-      <p class="quotebig">
+      <p class="quotebig p_8">
         <span class="storquote">"</span> Det interessante ligger i fejlen. Et foto
         med masser af fejl er interessant. Jeg eksperimenterer med udstyr og teknik,
         og skaber nye visuelle udtryk. <span class="storquote"> "</span>
@@ -63,7 +63,7 @@
   <div class="textbox3">
     <div class="center-text-block">
       <h3>"UPERFEKT ER PERFEKT"</h3>
-      <p>
+      <p class="p_9">
         Karrieren begynder også så småt også at gå den rette vej: Pierre er
         begyndt at sælge fotokunst på nettet, og har udgivet sin første foto-bog
         med titlen “Lidt i fem,” som er en fotografisk odyssé om at slæbe en
@@ -83,11 +83,11 @@
   </div>
 </div>
 <div class="quotes">
-  <q
+  <q class="p_10"
     >Nu kan jeg leve livet igen. Jeg føler mig frisk. Jeg føler mig fri. Jeg
     føler mig genfødt.</q
   >
-  <q>Uperfekt er perfekt</q>
+  <q class="p_11">Uperfekt er perfekt</q>
 </div>
 
 <style>
@@ -254,5 +254,36 @@
   .quotebig {
     margin-top: 4rem;
     font-weight: 800;
+  }
+
+  .ny-b {
+    margin-top: 5rem;
+    margin-left: 2rem;
+  }
+
+  .pierre {
+    animation: var(--animation-slide-in-up) forward;
+  }
+
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+
+      opacity: 0;
+    }
+
+    40% {
+      opacity: 0.6;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .ny-b {
+      margin-top: 2rem;
+    }
   }
 </style>

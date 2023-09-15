@@ -15,7 +15,7 @@
   <!-- 3/5 Grid Section -->
   <div class="textbox1">
     <div class="center-text-block">
-      <p>
+      <p class="p_1">
         Pierres interesse for foto startede som ganske ung - som 10-årig fik han
         sin fars gamle Rollei-kamera, og begyndte at skyde løs. Det var før den
         digitale revolution, så alle Pierres lommepenge blev brugt på filmruller
@@ -56,13 +56,13 @@
 <div class="container3">
   <div class="textbox3">
     <div class="center-text-block">
-      <p>
+      <p class="p_2">
         Pierre over til digital fotografering i starten af 2000’erne, da han
         begyndte at studere fotografisk kommunikation på DMJX. Her åbnede en ny
         verden sig: Reklamefotografering i studie, lyssætning og manipulering af
         billeder i Photoshop blev hans nye stil.
       </p>
-      <p>
+      <p class="p_3">
         På det tidspunkt var stock-foto industrien i starten af en revolution:
         De første online stock-foto websites begyndte at komme på markedet, men
         de store, etablerede spillere på markedet holdt lidt igen. Pierre så det
@@ -200,5 +200,24 @@
     border-radius: 0 20px 20px 70px; /* Rounded top-left, top-right, square bottom-right, rounded bottom-left */
     padding: 20px;
     text-align: center;
+  }
+  .pierre {
+    animation: var(--animation-slide-in-up) forward;
+  }
+
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+
+      opacity: 0;
+    }
+
+    40% {
+      opacity: 0.6;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
 </style>
